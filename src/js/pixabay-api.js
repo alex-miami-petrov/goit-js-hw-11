@@ -11,7 +11,7 @@ const apiKey = '44685335-fea0dcf7b7c0436df223e42aa';
 export async function fetchImages(searchTerm) {
   const url = `https://pixabay.com/api/?key=${apiKey}&q=${encodeURIComponent(
     searchTerm
-  )}&image_type=photo&orientation=horizontal&safesearch=true`;
+  )}&image_type=photo&orientation=horizontal&safesearch=true&order=popular&per_page=9`;
 
   try {
     const response = await fetch(url);

@@ -4,6 +4,7 @@ import { renderImages } from './js/render-functions.js';
 
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
+const loader = document.getElementById('loader');
 
 searchForm.addEventListener('submit', async function (event) {
   event.preventDefault();
@@ -20,6 +21,7 @@ searchForm.addEventListener('submit', async function (event) {
   }
 
   try {
+    loader.style.display = 'block';
     const images = await fetchImages(searchTerm);
     renderImages(images);
   } catch (error) {
@@ -29,5 +31,8 @@ searchForm.addEventListener('submit', async function (event) {
       message: 'Failed to search images. Please try again later.',
       position: 'topRight',
     });
+  } finally {
+    loader.style.display = 'none';
+    searchInput.value = '';
   }
 });
