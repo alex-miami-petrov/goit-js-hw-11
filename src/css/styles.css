@@ -24,7 +24,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
-li {
+ul {
+  list-style: none;
 }
 
 .container {
@@ -244,6 +245,40 @@ p {
   padding-top: 4px;
   padding-bottom: 4px;
   margin-top: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.gallery {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  gap: 24px;
+}
+
+.gallery-item {
+  width: 320px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 320px;
+  height: 200px;
+  display: block;
+}
+
+.image-info {
+  /* padding: 8px; */
+  width: 275px;
+  text-align: center;
+
+  padding-bottom: 4px;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33333;
