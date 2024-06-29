@@ -263,8 +263,7 @@ a {
   /* padding: 8px; */
   width: 275px;
   text-align: center;
-
-  /* padding-bottom: 4px; */
+  padding-top: 4px;
 
   font-weight: 600;
   font-size: 12px;
