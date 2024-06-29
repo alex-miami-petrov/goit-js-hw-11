@@ -22,8 +22,8 @@ export function renderImages(images) {
   // const gap = '24px';
 
   images.forEach(image => {
-    const listItem = document.createElement('li'); // Створюємо <li> для кожного зображення
-    listItem.classList.add('gallery-item'); // Додаємо клас 'gallery-item' до <li>
+    const listItem = document.createElement('li');
+    listItem.classList.add('gallery-item');
 
     const link = document.createElement('a');
     link.href = image.largeImageURL;
@@ -53,9 +53,9 @@ export function renderImages(images) {
     downloads.textContent = `Downloads ${image.downloads}`;
     info.appendChild(downloads);
 
-    listItem.appendChild(link); // Додаємо посилання на зображення у <li>
-    listItem.appendChild(info); // Додаємо <div class="image-info"> у <li>
-    gallery.appendChild(listItem); // Додаємо <li> у галерею
+    listItem.appendChild(link);
+    listItem.appendChild(info);
+    gallery.appendChild(listItem);
   });
 
   lightbox.refresh();

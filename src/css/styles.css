@@ -230,26 +230,6 @@ a {
 }
 
 .image-info {
-  display: flex;
-  padding-left: 20px;
-  padding-right: 25px;
-
-  border-bottom: 1px solid #808080;
-  border-left: 1px solid #808080;
-  border-right: 1px solid #808080;
-  width: 315px;
-}
-
-p {
-  text-align: center;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-top: 4px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33333;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
 }
 
 .gallery {
@@ -273,6 +253,13 @@ p {
 }
 
 .image-info {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 25px;
+
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
   /* padding: 8px; */
   width: 275px;
   text-align: center;
