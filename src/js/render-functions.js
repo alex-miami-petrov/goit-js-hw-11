@@ -39,17 +39,17 @@ export function renderImages(images) {
 
     const likes = document.createElement('p');
     likes.textContent = `Likes ${image.likes}`;
-    // likes.innerHTML = `Likes <span style="font-weight: 400; font-size: 12px; line-height: 2; letter-spacing: 0.04em; color: #2e2f42;">${image.views}</span>`;
+
     info.appendChild(likes);
 
     const views = document.createElement('p');
     views.textContent = `Views ${image.views}`;
-    // views.innerHTML = `Views <span style="font-weight: 400; font-size: 12px; line-height: 2; letter-spacing: 0.04em; color: #2e2f42;">${image.views}</span>`;
+
     info.appendChild(views);
 
     const comments = document.createElement('p');
     comments.textContent = `Comments ${image.comments}`;
-    // comments.innerHTML = `Comments <span style="font-weight: 400; font-size: 12px; line-height: 2; letter-spacing: 0.04em; color: #2e2f42;">${image.views}</span>`;
+
     info.appendChild(comments);
 
     const downloads = document.createElement('p');
