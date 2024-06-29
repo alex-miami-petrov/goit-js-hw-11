@@ -9,6 +9,8 @@ const loader = document.getElementById('loader');
 searchForm.addEventListener('submit', async function (event) {
   event.preventDefault();
 
+  gallery.innerHTML = '';
+
   const searchTerm = searchInput.value.trim();
 
   if (searchTerm === '') {
